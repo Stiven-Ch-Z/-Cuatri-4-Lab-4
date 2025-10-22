@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TallerMecanico.Views.Shared.Site" %>
+
+<!DOCTYPE html>
+<a id="lnkDemo" runat="server" href="~/demo/js">Demo</a>
+<html>
+<head runat="server">
+    <title>Taller Mecanico</title>
+    <link href="~/Estilos/site.css " rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/JS/app.js") %>"></script><!--JS Basico para la clase-->
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topbar">
+            <a id="InkRegistrar" runat="server" href="~/autos/registrar">Registrar Auto</a>
+            <a id="InkConsultar" runat="server" href="~/autos/consultar">Consultar Auto</a>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        </div>
+    </form>
+</body>
+</html>

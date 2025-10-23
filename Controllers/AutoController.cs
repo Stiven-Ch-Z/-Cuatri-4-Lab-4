@@ -12,7 +12,7 @@ namespace TallerMecanico.Controllers
         
         public void Registrar(Auto nuevo)
         {
-            if (string.IsNullOrWhiteSpace(nuevo.Placa))
+            if (string.IsNullOrWhiteSpace(nuevo.Placa) || string.IsNullOrWhiteSpace(nuevo.Trabajo))
             {
                 throw new ArgumentException("Todos los campos son obligatorios.");
             }
@@ -32,12 +32,22 @@ namespace TallerMecanico.Controllers
             return _autos
                 .Where(a=> a.Placa.IndexOf(placa, StringComparison.OrdinalIgnoreCase) >= 0)
                 .ToList();
-
-
-
         }
-        
-            
-        
+        public bool Eliminar(string placa)
+        {
+            if (string.IsNullOrWhiteSpace(placa))
+            {
+                throw new ArgumentException("La placa no puede estar vacía.");
+            }
+            var auto = _autos.FirstOrDefault(a => a.Placa.Equals(placa, StringComparison.OrdinalIgnoreCase));
+            if (auto == null)
+            {
+                return false; // no se encontró el auto
+            }
+            _autos.Remove(auto);
+            return true; // se elimina el auto
+        }
+
+
     }
 }

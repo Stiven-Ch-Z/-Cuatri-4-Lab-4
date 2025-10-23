@@ -144,6 +144,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Js\app.js" />
+    <Content Include="Js\consulta.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -202,6 +203,7 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Autos\Consultar.aspx" />
+    <Content Include="Views\Autos\Eliminar.aspx" />
     <Content Include="Views\Autos\Registrar.aspx" />
     <Content Include="Views\Demo\JSBasico.aspx" />
     <Content Include="Web.config" />
@@ -267,6 +269,13 @@
     </Compile>
     <Compile Include="Views\Autos\Consultar.aspx.designer.cs">
       <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Autos\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Autos\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Autos\Registrar.aspx.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>

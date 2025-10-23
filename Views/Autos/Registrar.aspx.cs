@@ -27,7 +27,8 @@ namespace TallerMecanico.Views.Autos
                     Marca = txtMarca.Text.Trim(), // Tomamos la marca 
                     Modelo = txtModelo.Text.Trim(), // Tomamos el modelo 
                     NombreDueno = txtDueno.Text.Trim(), // Tomamos el nombre del dueño
-                    FechaIngreso = DateTime.Parse(txtFecha.Text.Trim()) // Convertimos fecha
+                    FechaIngreso = DateTime.Parse(txtFecha.Text.Trim()), // Convertimos fecha
+                    Trabajo = txtTrabajo.Text.Trim() // Tomamos el trabajo solicitado    
                 };
 
                 // 2) Llamamos a la “acción” del controlador para registrar 
@@ -39,7 +40,8 @@ namespace TallerMecanico.Views.Autos
 
                 // 4) Limpiamos campos (opcional para la demo) 
                 txtPlaca.Text = txtMarca.Text = txtModelo.Text =
-                txtDueno.Text = txtFecha.Text = string.Empty;
+                txtDueno.Text = txtFecha.Text = txtTrabajo.Text= string.Empty;
+                
             }
             catch (Exception ex)
             {

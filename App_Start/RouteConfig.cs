@@ -27,6 +27,12 @@ namespace TallerMecanico
                 routeUrl: "demo/js", // URL amigable 
                 physicalFile: "~/Views/Demo/JSBasico.aspx" // Página física 
                 );
+            
+            routes.MapPageRoute(
+                routeName: "EliminarAutos",
+                routeUrl: "autos/eliminar",
+                physicalFile: "~/Views/Autos/Eliminar.aspx"
+                );
         }
     }
 }

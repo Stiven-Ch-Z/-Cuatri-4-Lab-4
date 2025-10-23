@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>Taller Mecanico</title>
-    <link href="~/Estilos/site.css " rel="stylesheet" />
+    <link href="~/Estilos/site.css" rel="stylesheet" />
     <script src="<%=ResolveUrl("~/JS/app.js") %>"></script><!--JS Basico para la clase-->
     
 </head>
@@ -14,6 +14,7 @@
         <div class="topbar">
             <a id="InkRegistrar" runat="server" href="~/autos/registrar">Registrar Auto</a>
             <a id="InkConsultar" runat="server" href="~/autos/consultar">Consultar Auto</a>
+            <a id="InkEliminar" runat="server" href="~/autos/eliminar">Eliminar Auto</a>
         </div>
         <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />

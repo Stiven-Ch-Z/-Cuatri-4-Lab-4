@@ -1,23 +1,25 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TallerMecanico.Views.Shared.Site" %>
 
 <!DOCTYPE html>
-<a id="lnkDemo" runat="server" href="~/demo/js">Demo</a>
 <html>
 <head runat="server">
     <title>Taller Mecanico</title>
     <link href="~/Estilos/site.css" rel="stylesheet" />
-    <script src="<%=ResolveUrl("~/JS/app.js") %>"></script><!--JS Basico para la clase-->
-    
+    <script src="<%=ResolveUrl("~/JS/app.js") %>"></script>
+    <!--JS Basico para la clase-->
+
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="topbar">
-            <a id="InkRegistrar" runat="server" href="~/autos/registrar">Registrar Auto</a>
-            <a id="InkConsultar" runat="server" href="~/autos/consultar">Consultar Auto</a>
-            <a id="InkEliminar" runat="server" href="~/autos/eliminar">Eliminar Auto</a>
+            <a id="lnkRegistrar" runat="server" href="~/autos/registrar">Registrar Auto</a>
+            <a id="lnkConsultar" runat="server" href="~/autos/consultar">Consultar Auto</a> 
+            <a id="lnkEliminar" runat="server" href="~/autos/eliminar">Eliminar Auto</a>
+            <a id="lnkDemo" runat="server" href="~/demo/js">Demo</a>
+            <!--estas son las direcciones que van a afectar los cambios del mastersite como los diseños y los pocisionamiento de los del top bar-->
         </div>
         <div class="container">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" /> <!--
 
         </div>
     </form>

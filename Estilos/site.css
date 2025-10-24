@@ -51,13 +51,14 @@ table, .gv {
     width: 100%;
     border-collapse: collapse; /* Quita los espacios entre celdas de la tabla */
     margin-top: 16px; /* Espacio superior */
-    background-color: #F54927;
+    background-color: #F54927 !important;
     font-family: 'Segoe UI', sans-serif;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    cursor: pointer;
+    text-align:center
 }
+
     table tr:hover, .gv {
-        background-color: #f1f1f1;
-        transition: background-color 0.4s ease;
+        cursor: pointer;
+        opacity: .9
     }

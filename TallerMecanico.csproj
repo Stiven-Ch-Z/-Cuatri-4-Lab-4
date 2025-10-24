@@ -143,8 +143,8 @@
     <Content Include="Estilos\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Js\app.js" />
-    <Content Include="Js\consulta.js" />
+    <Content Include="JS\app.js" />
+    <Content Include="JS\consulta.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />

@@ -15,15 +15,6 @@ namespace TallerMecanico.Views.Shared
     {
 
         /// <summary>
-        /// Control lnkDemo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkDemo;
-
-        /// <summary>
         /// Control form1.
         /// </summary>
         /// <remarks>
@@ -33,31 +24,40 @@ namespace TallerMecanico.Views.Shared
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control InkRegistrar.
+        /// Control lnkRegistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor InkRegistrar;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkRegistrar;
 
         /// <summary>
-        /// Control InkConsultar.
+        /// Control lnkConsultar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor InkConsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkConsultar;
 
         /// <summary>
-        /// Control InkEliminar.
+        /// Control lnkEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor InkEliminar;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkEliminar;
+
+        /// <summary>
+        /// Control lnkDemo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor lnkDemo;
 
         /// <summary>
         /// Control MainContent.
